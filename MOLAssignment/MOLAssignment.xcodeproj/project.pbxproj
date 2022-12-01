@@ -17,6 +17,7 @@
 		5304C2C62938F9B800571A26 /* PostsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5304C2C52938F9B800571A26 /* PostsInteractor.swift */; };
 		5304C2C82938F9D700571A26 /* PostsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5304C2C72938F9D700571A26 /* PostsCoordinator.swift */; };
 		5304C2CA2938F9F000571A26 /* PostsSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5304C2C92938F9F000571A26 /* PostsSceneFactory.swift */; };
+		5304C2D02939012700571A26 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 5304C2CF2939012700571A26 /* Swinject */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5304C2D02939012700571A26 /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +137,9 @@
 			dependencies = (
 			);
 			name = MOLAssignment;
+			packageProductDependencies = (
+				5304C2CF2939012700571A26 /* Swinject */,
+			);
 			productName = MOLAssignment;
 			productReference = 5304C2A52938F5A600571A26 /* MOLAssignment.app */;
 			productType = "com.apple.product-type.application";
@@ -163,6 +168,9 @@
 				Base,
 			);
 			mainGroup = 5304C29C2938F5A500571A26;
+			packageReferences = (
+				5304C2CE2939012700571A26 /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = 5304C2A62938F5A600571A26 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -406,6 +414,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5304C2CE2939012700571A26 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5304C2CF2939012700571A26 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5304C2CE2939012700571A26 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5304C29D2938F5A500571A26 /* Project object */;
 }
