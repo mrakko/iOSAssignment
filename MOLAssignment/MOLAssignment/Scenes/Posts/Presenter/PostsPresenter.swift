@@ -8,7 +8,7 @@
 import Foundation
 
 protocol PostsPresenterInput {
-    
+    func viewDidLoad()
 }
 
 final class PostsPresenter {
@@ -22,5 +22,14 @@ final class PostsPresenter {
 }
 
 extension PostsPresenter: PostsPresenterInput {
-    
+    func viewDidLoad() {
+        interactor.getPosts { result in
+            switch result {
+            case .success(let items):
+                print(items)
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
 }

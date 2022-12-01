@@ -17,10 +17,12 @@ final class PostsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
+        presenter.viewDidLoad()
     }
     
     private func setupViews() {
         view.backgroundColor = .yellow
+        
     }
 }
 

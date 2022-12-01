@@ -19,7 +19,12 @@
 		5304C2CA2938F9F000571A26 /* PostsSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5304C2C92938F9F000571A26 /* PostsSceneFactory.swift */; };
 		5304C2D02939012700571A26 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 5304C2CF2939012700571A26 /* Swinject */; };
 		5304C2D32939018000571A26 /* DependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5304C2D22939018000571A26 /* DependencyProvider.swift */; };
+		5304C2D8293905CF00571A26 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5304C2D7293905CF00571A26 /* APIService.swift */; };
+		5304C2DA293905E200571A26 /* DefaultAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5304C2D9293905E200571A26 /* DefaultAPIService.swift */; };
+		5304C2DD293906B200571A26 /* PostListDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5304C2DC293906B200571A26 /* PostListDTO.swift */; };
+		5304C2DF293906F400571A26 /* PostListItemDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5304C2DE293906F400571A26 /* PostListItemDTO.swift */; };
 		5304C2E22939079500571A26 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 5304C2E12939079500571A26 /* Alamofire */; };
+		5304C2E629390C7500571A26 /* AppConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5304C2E529390C7500571A26 /* AppConfiguration.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,12 @@
 		5304C2C72938F9D700571A26 /* PostsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsCoordinator.swift; sourceTree = "<group>"; };
 		5304C2C92938F9F000571A26 /* PostsSceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsSceneFactory.swift; sourceTree = "<group>"; };
 		5304C2D22939018000571A26 /* DependencyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyProvider.swift; sourceTree = "<group>"; };
+		5304C2D7293905CF00571A26 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		5304C2D9293905E200571A26 /* DefaultAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAPIService.swift; sourceTree = "<group>"; };
+		5304C2DC293906B200571A26 /* PostListDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListDTO.swift; sourceTree = "<group>"; };
+		5304C2DE293906F400571A26 /* PostListItemDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListItemDTO.swift; sourceTree = "<group>"; };
+		5304C2E329390BA900571A26 /* dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = dev.xcconfig; sourceTree = "<group>"; };
+		5304C2E529390C7500571A26 /* AppConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfiguration.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +81,9 @@
 		5304C2A72938F5A600571A26 /* MOLAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				5304C2DB2939061D00571A26 /* Configurations */,
 				5304C2D12939017000571A26 /* DI */,
+				5304C2D4293905A600571A26 /* Services */,
 				5304C2BE2938F96D00571A26 /* Scenes */,
 				5304C2A82938F5A600571A26 /* AppDelegate.swift */,
 				5304C2AA2938F5A600571A26 /* SceneDelegate.swift */,
@@ -132,6 +145,50 @@
 				5304C2D22939018000571A26 /* DependencyProvider.swift */,
 			);
 			path = DI;
+			sourceTree = "<group>";
+		};
+		5304C2D4293905A600571A26 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				5304C2E429390C5500571A26 /* AppConfig */,
+				5304C2D5293905AB00571A26 /* Networking */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5304C2D5293905AB00571A26 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				5304C2D6293905B500571A26 /* DTOs */,
+				5304C2D7293905CF00571A26 /* APIService.swift */,
+				5304C2D9293905E200571A26 /* DefaultAPIService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		5304C2D6293905B500571A26 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				5304C2DC293906B200571A26 /* PostListDTO.swift */,
+				5304C2DE293906F400571A26 /* PostListItemDTO.swift */,
+			);
+			path = DTOs;
+			sourceTree = "<group>";
+		};
+		5304C2DB2939061D00571A26 /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				5304C2E329390BA900571A26 /* dev.xcconfig */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		5304C2E429390C5500571A26 /* AppConfig */ = {
+			isa = PBXGroup;
+			children = (
+				5304C2E529390C7500571A26 /* AppConfiguration.swift */,
+			);
+			path = AppConfig;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,13 +270,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				5304C2C62938F9B800571A26 /* PostsInteractor.swift in Sources */,
+				5304C2DA293905E200571A26 /* DefaultAPIService.swift in Sources */,
+				5304C2DF293906F400571A26 /* PostListItemDTO.swift in Sources */,
 				5304C2CA2938F9F000571A26 /* PostsSceneFactory.swift in Sources */,
 				5304C2C22938F9A000571A26 /* PostsViewController.swift in Sources */,
 				5304C2BD2938F95300571A26 /* AppCoordinator.swift in Sources */,
 				5304C2A92938F5A600571A26 /* AppDelegate.swift in Sources */,
 				5304C2C42938F9AC00571A26 /* PostsPresenter.swift in Sources */,
+				5304C2D8293905CF00571A26 /* APIService.swift in Sources */,
 				5304C2D32939018000571A26 /* DependencyProvider.swift in Sources */,
+				5304C2DD293906B200571A26 /* PostListDTO.swift in Sources */,
 				5304C2C82938F9D700571A26 /* PostsCoordinator.swift in Sources */,
+				5304C2E629390C7500571A26 /* AppConfiguration.swift in Sources */,
 				5304C2AB2938F5A600571A26 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +302,7 @@
 /* Begin XCBuildConfiguration section */
 		5304C2B72938F5AF00571A26 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5304C2E329390BA900571A26 /* dev.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -300,6 +363,7 @@
 		};
 		5304C2B82938F5AF00571A26 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5304C2E329390BA900571A26 /* dev.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -354,6 +418,7 @@
 		};
 		5304C2BA2938F5AF00571A26 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5304C2E329390BA900571A26 /* dev.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -382,6 +447,7 @@
 		};
 		5304C2BB2938F5AF00571A26 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5304C2E329390BA900571A26 /* dev.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

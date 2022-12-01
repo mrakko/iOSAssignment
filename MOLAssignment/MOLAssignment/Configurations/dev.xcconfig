@@ -1,0 +1,14 @@
+//
+//  dev.xcconfig
+//  MOLAssignment
+//
+//  Created by Tajti Márk on 2022. 12. 01..
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+SLASH=/
+
+API_BASE_URL = https:$(SLASH)/dummyapi.io/data/v1
+API_KEY = 6384b8ee394ee23c54fb9ffb
