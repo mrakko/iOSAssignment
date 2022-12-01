@@ -18,6 +18,7 @@
 		5304C2C82938F9D700571A26 /* PostsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5304C2C72938F9D700571A26 /* PostsCoordinator.swift */; };
 		5304C2CA2938F9F000571A26 /* PostsSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5304C2C92938F9F000571A26 /* PostsSceneFactory.swift */; };
 		5304C2D02939012700571A26 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 5304C2CF2939012700571A26 /* Swinject */; };
+		5304C2D32939018000571A26 /* DependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5304C2D22939018000571A26 /* DependencyProvider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		5304C2C52938F9B800571A26 /* PostsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsInteractor.swift; sourceTree = "<group>"; };
 		5304C2C72938F9D700571A26 /* PostsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsCoordinator.swift; sourceTree = "<group>"; };
 		5304C2C92938F9F000571A26 /* PostsSceneFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsSceneFactory.swift; sourceTree = "<group>"; };
+		5304C2D22939018000571A26 /* DependencyProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyProvider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		5304C2A72938F5A600571A26 /* MOLAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				5304C2D12939017000571A26 /* DI */,
 				5304C2BE2938F96D00571A26 /* Scenes */,
 				5304C2A82938F5A600571A26 /* AppDelegate.swift */,
 				5304C2AA2938F5A600571A26 /* SceneDelegate.swift */,
@@ -119,6 +122,14 @@
 				5304C2C52938F9B800571A26 /* PostsInteractor.swift */,
 			);
 			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5304C2D12939017000571A26 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				5304C2D22939018000571A26 /* DependencyProvider.swift */,
+			);
+			path = DI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,6 +214,7 @@
 				5304C2BD2938F95300571A26 /* AppCoordinator.swift in Sources */,
 				5304C2A92938F5A600571A26 /* AppDelegate.swift in Sources */,
 				5304C2C42938F9AC00571A26 /* PostsPresenter.swift in Sources */,
+				5304C2D32939018000571A26 /* DependencyProvider.swift in Sources */,
 				5304C2C82938F9D700571A26 /* PostsCoordinator.swift in Sources */,
 				5304C2AB2938F5A600571A26 /* SceneDelegate.swift in Sources */,
 			);

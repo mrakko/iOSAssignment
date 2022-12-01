@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol CoordinatorInput {
+    func start() -> UIViewController
+}
+
 final class AppCoordinator {
     private var window: UIWindow
     
@@ -16,7 +20,7 @@ final class AppCoordinator {
     }
     
     func start() {
-        window.rootViewController = PostsCoordinator(sceneFactory: PostsSceneFactory()).start()
+        window.rootViewController = DependencyProvider.resolver.resolve(PostsCoordinatorInput.self)!.start()
         window.makeKeyAndVisible()
     }
 }

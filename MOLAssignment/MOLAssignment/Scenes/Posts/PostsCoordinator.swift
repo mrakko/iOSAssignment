@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol PostsCoordinatorInput {
+protocol PostsCoordinatorInput: CoordinatorInput {
     // e.g. showPostDetail()
 }
 

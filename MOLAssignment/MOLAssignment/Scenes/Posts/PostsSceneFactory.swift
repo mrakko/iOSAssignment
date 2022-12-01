@@ -16,8 +16,7 @@ final class PostsSceneFactory {}
 extension PostsSceneFactory: PostsSceneFactoryInput {
     func createPostsViewController() -> PostsViewController {
         let view = PostsViewController()
-        let interactor = PostsInteractor()
-        view.presenter = PostsPresenter(interactor: interactor, view: view)
+        view.presenter = DependencyProvider.resolver.resolve(PostsPresenterInput.self, argument: view as PostsView)!
         return view
     }
 }
