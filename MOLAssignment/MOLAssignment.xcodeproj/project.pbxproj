@@ -19,6 +19,7 @@
 		5304C2CA2938F9F000571A26 /* PostsSceneFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5304C2C92938F9F000571A26 /* PostsSceneFactory.swift */; };
 		5304C2D02939012700571A26 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 5304C2CF2939012700571A26 /* Swinject */; };
 		5304C2D32939018000571A26 /* DependencyProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5304C2D22939018000571A26 /* DependencyProvider.swift */; };
+		5304C2E22939079500571A26 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 5304C2E12939079500571A26 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5304C2D02939012700571A26 /* Swinject in Frameworks */,
+				5304C2E22939079500571A26 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +152,7 @@
 			name = MOLAssignment;
 			packageProductDependencies = (
 				5304C2CF2939012700571A26 /* Swinject */,
+				5304C2E12939079500571A26 /* Alamofire */,
 			);
 			productName = MOLAssignment;
 			productReference = 5304C2A52938F5A600571A26 /* MOLAssignment.app */;
@@ -181,6 +184,7 @@
 			mainGroup = 5304C29C2938F5A500571A26;
 			packageReferences = (
 				5304C2CE2939012700571A26 /* XCRemoteSwiftPackageReference "Swinject" */,
+				5304C2E02939079500571A26 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 5304C2A62938F5A600571A26 /* Products */;
 			projectDirPath = "";
@@ -436,6 +440,14 @@
 				kind = branch;
 			};
 		};
+		5304C2E02939079500571A26 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -443,6 +455,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5304C2CE2939012700571A26 /* XCRemoteSwiftPackageReference "Swinject" */;
 			productName = Swinject;
+		};
+		5304C2E12939079500571A26 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5304C2E02939079500571A26 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
